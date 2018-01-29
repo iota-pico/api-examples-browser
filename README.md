@@ -4,6 +4,40 @@
 
 Example code for using IOTA Pico Framework with Browser written in TypeScript.
 
-## Examples
+## Running
 
-* api\getNodeInfoExample
+You can run the examples by serving the web pages locally by running:
+
+```js
+npm run serve
+```
+
+The will automatically start a web server and launch the index page containing links to all the examples.
+
+## Configuration
+
+If you want to modify the node that is used to service the examples please modify the config file config/networkConfig.json.
+
+To connect to a node use:
+
+```json
+{
+    "protocol": "http",
+    "host": "n1.iota.eco",
+    "port": 14265
+}
+```
+
+To connect to the sandbox use the following:
+
+```json
+{
+    "protocol": "http",
+    "host": "sandbox.iotatoken.com",
+    "path": "/api/v1/commands",
+    "port": 14265,
+    "additionalHeaders": {
+        "Authorization": "YOUR_SANDBOX_TOKEN"
+    }
+}
+```

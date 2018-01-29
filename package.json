@@ -12,7 +12,8 @@
         "build-copy-html": "copyfiles --up 1 ./src/**/*.html ./dist",
         "build": "npm-run-all build-clean build-compile build-lint build-copy-html",
         "security": "nsp check",
-        "dist": "npm-run-all build security"
+        "dist": "npm-run-all build security",
+        "serve": "serve --open"
     },
     "author": "martyn@iota.eco",
     "license": "MIT",
@@ -20,7 +21,9 @@
         "@iota-pico/api": "^0.0.1",
         "@iota-pico/core": "^0.0.1",
         "@iota-pico/pal-browser": "^0.0.1",
-        "systemjs": "^0.20.19"
+        "bootstrap": "^4.0.0",
+        "systemjs": "^0.20.19",
+        "systemjs-plugin-json": "^0.3.0"
     },
     "devDependencies": {
         "@types/node": "^9.3.0",
@@ -28,6 +31,7 @@
         "npm-run-all": "^4.1.2",
         "nsp": "^3.1.0",
         "rimraf": "^2.6.2",
+        "serve": "^6.4.9",
         "tslint": "^5.9.1",
         "tslint-microsoft-contrib": "^5.0.2",
         "typescript": "^2.6.2"

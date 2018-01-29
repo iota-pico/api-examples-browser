@@ -1,22 +1,14 @@
 import { NodeClient } from "@iota-pico/api/dist/client/nodeClient";
 import { ErrorHelper } from "@iota-pico/core/dist/helpers/errorHelper";
-import { NetworkEndPoint } from "@iota-pico/core/dist/network/networkEndPoint";
-import { BrowserNetworkClient } from "@iota-pico/pal-browser/dist/network/browserNetworkClient";
+import * as networkConfig from "../networkConfig";
 
 /**
- * Example of API getNodeInfo
+ * Example of API getNodeInfo.
  */
-
 export async function getNodeInfoExample(): Promise<void> {
-    // Connect to a node
-    const networkEndPoint = new NetworkEndPoint("http", "node01.iotatoken.nl", "", 14265);
-    const networkClient = new BrowserNetworkClient(networkEndPoint);
-    const nodeClient = new NodeClient(networkClient, "1");
-
-    // Or use the sandbox environment
-    // const networkEndPoint = new NetworkEndPoint("http", "sandbox.iotatoken.com", "/api/v1/commands", 14265);
-    // const networkClient = new BrowserNetworkClient(networkEndPoint);
-    // const nodeClient = new NodeClient(networkClient, "1", { Authorization: "YOUR_TOKEN_HERE" });
+    const networkEndPoint = networkConfig.getEndPoint();
+    const networkClient = networkConfig.getNetworkClient(networkEndPoint);
+    const nodeClient = new NodeClient(networkClient, "1", networkConfig.getAdditionalHeaders());
 
     console.log(`==> Requesting getNodeInfo from ${networkEndPoint.getUri()}`);
     console.log();
@@ -24,6 +16,7 @@ export async function getNodeInfoExample(): Promise<void> {
     try {
         const response = await nodeClient.getNodeInfo();
         console.log("<== Success");
+        console.log();
         console.log(`\tappName: ${response.appName}`);
         console.log(`\tappVersion: ${response.appVersion}`);
         console.log(`\tjreAvailableProcessors: ${response.jreAvailableProcessors}`);
@@ -43,6 +36,7 @@ export async function getNodeInfoExample(): Promise<void> {
         console.log(`\tduration: ${response.duration}`);
     } catch (err) {
         console.log("<== Failed");
-        console.log(ErrorHelper.format(err));
+        console.log();
+        console.log(ErrorHelper.format(err, true));
     }
 }
