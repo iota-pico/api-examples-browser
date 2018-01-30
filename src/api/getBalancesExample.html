@@ -3,17 +3,21 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>addNeighbors Example</title>
+    <title>getBalances Example</title>
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/examples.css">
 </head>
 
 <body class="p-5">
-    <h1>addNeighbors Example</h1>
+    <h1>getBalances Example</h1>
     <form>
         <div class="form-group">
-            <label for="neighbors">Neighbors</label>
-            <input type="text" class="form-control" id="neighbors" placeholder="e.g. udp://1.2.3.4:14600,udp://5.6.7.8:14600">
+            <label for="addresses">Addresses</label>
+            <input type="text" class="form-control" id="addresses" placeholder="comma separated addresses hashes">
+        </div>
+        <div class="form-group">
+            <label for="threshold">Threshold</label>
+            <input type="text" class="form-control" id="threshold" placeholder="" value="100">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
@@ -22,12 +26,13 @@
     <script src="../../node_modules/systemjs/dist/system.js"></script>
     <script src="../../config.js"></script>
     <script>
-        System.import("addNeighborsExample.js")
+        System.import("getBalancesExample.js")
             .then(function (module) {
                 var frm = document.getElementsByTagName("form");
-                frm[0].onsubmit = function() {
+                frm[0].onsubmit = function () {
                     consoleClear();
-                    module.addNeighborsExample(elementToArray("neighbors"));
+                    module.getBalancesExample(elementToArray("addresses", []),
+                        elementToNumber("threshold", 100));
                     return false;
                 };
             });

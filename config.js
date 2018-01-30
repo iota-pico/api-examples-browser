@@ -51,3 +51,15 @@ function consoleClear() {
     consoleDiv.innerHTML = "";
 }
 
+function elementToArray(domElement, defaultValue) {
+    var val = document.getElementById(domElement).value;
+
+    return val && val.length > 0 ? val.split(",") : defaultValue;
+}
+
+function elementToNumber(domElement, defaultValue) {
+    var val = document.getElementById(domElement).value;
+    var numVal = parseInt(val);
+
+    return isNaN(numVal) ? defaultValue : numVal;
+}
