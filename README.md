@@ -2,6 +2,22 @@
 
 # IOTA Pico Framework Examples for Browser in TypeScript
 
+## Introduction
+
+The IOTA Pico Framework is intended to be a multi-layered set of object oriented JavaScript libraries.
+
+Each layer is fully abstracted allowing you to replace components with your own implementations very easily.
+
+The libraries are written in TypeScript so are all strongly typed. The modules are generated as ES6 so you may need to transpile them when including them for use in older JavaScript eco-systems. The code will run without transpilation in all modern browsers and when used by NodeJs.
+
+## Installation
+
+```shell
+npm install @iota-pico/examples-browser-ts
+```
+
+## Examples
+
 Example code for using IOTA Pico Framework with Browser written in TypeScript.
 
 ## Running
