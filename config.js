@@ -54,7 +54,7 @@ function consoleClear() {
 function elementToArray(domElement, defaultValue) {
     var val = document.getElementById(domElement).value;
 
-    return val && val.length > 0 ? val.split(",") : defaultValue;
+    return val && val.length > 0 ? val.split(",").map(v => v.trim()) : defaultValue;
 }
 
 function elementToNumber(domElement, defaultValue) {
