@@ -12,7 +12,7 @@
         "build-copy-html": "copyfiles --up 1 ./src/**/*.html ./dist",
         "build": "npm-run-all build-clean build-compile build-lint build-copy-html",
         "security": "nsp check",
-        "dist": "npm-run-all build security",
+        "dist": "npm-run-all build",
         "serve": "serve --open"
     },
     "author": "martyn@iota.eco",
