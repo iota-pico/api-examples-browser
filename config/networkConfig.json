@@ -1,5 +1,5 @@
 {
-    "protocol": "https",
-    "host": "nodes.thetangle.org",
-    "port": 443
+    "protocol": "http",
+    "host": "n1.iota.eco",
+    "port": 14265
 }
