@@ -16,7 +16,7 @@ install:
   - cd iotaeco/iota-pico-pal-browser
   - npm link @iota-pico/core
   - npm link
-  - cd ../iota-pico-examples-browser-ts
+  - cd ../iota-pico-api-examples-browser
   - npm link @iota-pico/core @iota-pico/api @iota-pico/pal-browser
   - npm install
 script:
