@@ -21,19 +21,21 @@
         "@iota-pico/api": "^0.9.3",
         "@iota-pico/core": "^0.9.3",
         "@iota-pico/pal-browser": "^0.9.3",
-        "bootstrap": "^4.0.0",
-        "systemjs": "^0.21.0",
+        "bootstrap": "^4.1.0",
+        "systemjs": "^0.21.3",
         "systemjs-plugin-json": "^0.3.0"
     },
     "devDependencies": {
-        "@types/node": "^9.4.7",
+        "@types/node": "^9.6.6",
         "copyfiles": "^2.0.0",
         "npm-run-all": "^4.1.2",
         "nsp": "^3.2.1",
         "rimraf": "^2.6.2",
-        "serve": "^6.5.3",
+        "serve": "^6.5.5",
         "tslint": "^5.9.1",
         "tslint-microsoft-contrib": "^5.0.3",
-        "typescript": "^2.7.2"
+        "typescript": "^2.8.3",
+        "webpack": "^4.6.0",
+        "webpack-cli": "^2.0.14"
     }
 }

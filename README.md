@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/iotaeco/iota-pico-api-examples-browser/master/LICENSE) [![Build Status](https://travis-ci.org/iotaeco/iota-pico-api-examples-browser.svg?branch=master)](https://travis-ci.org/iotaeco/iota-pico-api-examples-browser) [![NSP Status](https://nodesecurity.io/orgs/iotaeco/projects/fb6603c2-3547-48fa-8404-9e55cd44ed21/badge)](https://nodesecurity.io/orgs/iotaeco/projects/fb6603c2-3547-48fa-8404-9e55cd44ed21)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/https://github.com/iota-pico/api-examples-browser/master/LICENSE) [![Build Status](https://travis-ci.org/https://github.com/iota-pico/api-examples-browser.svg?branch=master)](https://travis-ci.org/https://github.com/iota-pico/api-examples-browser) [![NSP Status](https://nodesecurity.io/orgs/https://github.com/iota-pico/projects/1db1a220-1c26-4475-a991-160a4b3d38f6/badge)](https://nodesecurity.io/orgs/https://github.com/iota-pico/projects/1db1a220-1c26-4475-a991-160a4b3d38f6)
 
 # IOTA Pico Framework Examples for Browser in TypeScript
 
@@ -38,8 +38,8 @@ To connect to a node use:
 The IOTA Pico Framework is a multi-layered set of object oriented JavaScript libraries for use with the IOTA tangle.
 
 If you don't want to use the layered versions of the libraries consider using the  ready bundled versions:
-* [@iota-pico/lib-browser](https://github.com/iotaeco/iota-pico-lib-browser)
-* [@iota-pico/lib-nodejs](https://github.com/iotaeco/iota-pico-lib-nodejs)
+* [@iota-pico/lib-browser](https://github.com/iota-pico/lib-browser)
+* [@iota-pico/lib-nodejs](https://github.com/iota-pico/lib-nodejs)
 
 Each layer is fully abstracted allowing you to replace components with your own implementations very easily.
 
