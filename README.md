@@ -9,6 +9,7 @@ Example code for using IOTA Pico Framework with Browser written in TypeScript.
 ```shell
 npm install @iota-pico/api-examples-browser
 ```
+
 # Running
 
 You can run the examples by serving the web pages locally by running:
@@ -38,6 +39,7 @@ To connect to a node use:
 The IOTA Pico Framework is a multi-layered set of object oriented JavaScript libraries for use with the IOTA tangle.
 
 If you don't want to use the layered versions of the libraries consider using the  ready bundled versions:
+
 * [@iota-pico/lib-browser](https://github.com/iota-pico/lib-browser)
 * [@iota-pico/lib-nodejs](https://github.com/iota-pico/lib-nodejs)
 
