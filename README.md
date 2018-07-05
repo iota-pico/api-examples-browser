@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/iota-pico/api-examples-browser/master/LICENSE) [![Build Status](https://travis-ci.org/iota-pico/api-examples-browser.svg?branch=master)](https://travis-ci.org/iota-pico/api-examples-browser) [![NSP Status](https://nodesecurity.io/orgs/iota-pico/projects/1db1a220-1c26-4475-a991-160a4b3d38f6/badge)](https://nodesecurity.io/orgs/iota-pico/projects/1db1a220-1c26-4475-a991-160a4b3d38f6)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/iota-pico/api-examples-browser/master/LICENSE) [![Build Status](https://travis-ci.org/iota-pico/api-examples-browser.svg?branch=master)](https://travis-ci.org/iota-pico/api-examples-browser) 
 
 # IOTA Pico Framework Examples for Browser in TypeScript
 
