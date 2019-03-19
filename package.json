@@ -17,11 +17,11 @@
     "author": "martyn@iota.eco",
     "license": "MIT",
     "dependencies": {
-        "@iota-pico/api": "1.0.1",
-        "@iota-pico/core": "1.0.1",
-        "@iota-pico/pal-browser": "1.0.1",
+        "@iota-pico/api": "^1.0.1",
+        "@iota-pico/core": "^1.0.1",
+        "@iota-pico/pal-browser": "^1.0.1",
         "bootstrap": "^4.3.1",
-        "systemjs": "^3.0.1",
+        "systemjs": "^3.0.2",
         "systemjs-plugin-json": "^0.3.0"
     },
     "devDependencies": {
@@ -35,6 +35,6 @@
         "tslint-microsoft-contrib": "^6.1.0",
         "typescript": "^3.3.3333",
         "webpack": "^4.29.6",
-        "webpack-cli": "^3.2.3"
+        "webpack-cli": "^3.3.0"
     }
 }
